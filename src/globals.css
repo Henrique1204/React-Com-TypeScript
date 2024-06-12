@@ -1,0 +1,86 @@
+html {
+	--color-1: #463220;
+	--color-2: #66593c;
+	--color-4: #eceadd;
+	--color-5: #fff;
+
+	--gap-s: 0.625rem;
+	--gap: 1.25rem;
+}
+
+body {
+	margin: 0px;
+
+	font-family: sans-serif;
+
+	color: var(--color-2);
+	background: var(--color-4);
+}
+
+body * {
+	font-family: inherit;
+	color: inherit;
+}
+
+button {
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 600;
+	margin: 0px;
+}
+
+ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.flex {
+	display: flex;
+	gap: var(--gap);
+}
+
+.flex > * {
+	flex: 1;
+}
+
+.mb {
+	margin-bottom: var(--gap);
+}
+
+.bg-1 {
+	background: var(--color-1);
+}
+
+.bg-2 {
+	background: var(--color-2);
+}
+
+.bg-3 {
+	background: var(--color-3);
+}
+
+.bg-4 {
+	background: var(--color-4);
+}
+
+.bg-5 {
+	background: var(--color-5);
+}
+
+.container {
+	display: grid;
+	padding: var(--gap);
+	gap: var(--gap);
+}
+
+.box {
+	padding: var(--gap);
+	border-radius: var(--gap);
+	background: var(--color-5);
+}
