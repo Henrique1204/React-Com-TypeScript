@@ -1,10 +1,10 @@
 import React from 'react';
 
 import DateInput from 'Components/DateInput';
+import { useSaleContext } from 'Contexts/sale';
 
 const DateRange: Component = () => {
-	const [startDate, setStartDate] = React.useState<string>('');
-	const [endDate, setEndDate] = React.useState<string>('');
+	const { startDate, setStartDate, endDate, setEndDate } = useSaleContext();
 
 	const handlePreventSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
 		e.preventDefault();
