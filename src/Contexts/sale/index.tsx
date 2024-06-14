@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { formatDateToAPI } from 'Core/Helpers/formatDate';
+import { formatDateToAPI } from 'Core/Helpers/date';
 
 import useFetch from 'Hooks/useFetch';
 
@@ -9,7 +9,10 @@ import * as Types from './types';
 const SaleContext = React.createContext<Types.PartialSaleContextState>({});
 
 export const SaleContextProvider: Component = ({ children }) => {
-	const [startDate, setStartDate] = React.useState<string>(formatDateToAPI(14));
+	const [startDate, setStartDate] = React.useState<string>(
+		formatDateToAPI(-14)
+	);
+
 	const [endDate, setEndDate] = React.useState<string>(formatDateToAPI());
 
 	const { data, error, loading } = useFetch<Types.Sale[]>(
