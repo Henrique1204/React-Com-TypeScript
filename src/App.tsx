@@ -6,6 +6,7 @@ import Header from 'Components/Header';
 import Sidebar from 'Components/Sidebar';
 
 import Resume from 'Pages/Resume';
+import Sales from 'Pages/Sales';
 
 import './globals.css';
 
@@ -19,6 +20,7 @@ const App: Component = () => {
 					<Header />
 
 					<Resume />
+					<Sales />
 				</main>
 			</div>
 		</SaleContextProvider>

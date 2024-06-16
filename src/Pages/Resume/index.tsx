@@ -13,7 +13,7 @@ const Resume: Component = () => {
 		<section>
 			<SaleResume />
 
-			<div className='box'>gráficos</div>
+			<div className='box mb'>gráficos</div>
 		</section>
 	);
 };
