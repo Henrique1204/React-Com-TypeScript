@@ -54,28 +54,9 @@ ul {
 	margin-bottom: var(--gap);
 }
 
-.bg-1 {
-	background: var(--color-1);
-}
-
-.bg-2 {
-	background: var(--color-2);
-}
-
-.bg-3 {
-	background: var(--color-3);
-}
-
-.bg-4 {
-	background: var(--color-4);
-}
-
-.bg-5 {
-	background: var(--color-5);
-}
-
 .container {
 	display: grid;
+	grid-template-columns: 240px auto;
 	padding: var(--gap);
 	gap: var(--gap);
 }
@@ -84,6 +65,69 @@ ul {
 	padding: var(--gap);
 	border-radius: var(--gap);
 	background: var(--color-5);
+}
+
+.bg-1 {
+	background-color: var(--color-1);
+}
+
+.bg-2 {
+	background-color: var(--color-2);
+}
+
+.bg-3 {
+	background-color: var(--color-3);
+}
+
+.bg-4 {
+	background-color: var(--color-4);
+}
+
+.bg-5 {
+	background-color: var(--color-5);
+}
+
+/* HEADER */
+.datarange {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--gap);
+}
+
+/* SIDENAV */
+.sidenav li {
+	margin-bottom: var(--gap-s);
+
+	display: flex;
+	align-items: center;
+	gap: var(--gap-s);
+}
+
+.sidenav li span {
+	width: 2rem;
+	height: 2rem;
+	border-radius: var(--gap);
+
+	background-color: var(--color-4);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sidenav li:hover span {
+	background-color: var(--color-3);
+}
+
+.sidenav li a {
+	padding: var(--gap-s);
+
+	font-size: 1.125rem;
+	text-decoration: none;
+
+	color: var(--color-1);
+
+	flex: 1;
 }
 
 /* RESUME */
@@ -105,16 +149,16 @@ ul {
 	margin-bottom: var(--gap-s);
 
 	display: grid;
-	align-items: center;
 	grid-template-columns: auto auto 1fr;
+	align-items: center;
 	gap: var(--gap);
 }
 
-.venda div:last-child {
+.sale div:last-child {
 	justify-self: end;
 }
 
-.venda a {
+.sale a {
 	text-decoration: none;
 	color: inherit;
 }

@@ -13,10 +13,10 @@ import './globals.css';
 const App: Component = () => {
 	return (
 		<SaleContextProvider>
-			<div>
+			<div className='container'>
 				<Sidebar />
 
-				<main className='container'>
+				<main>
 					<Header />
 
 					<Resume />
