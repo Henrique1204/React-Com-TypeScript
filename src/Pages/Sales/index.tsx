@@ -2,10 +2,14 @@ import React from 'react';
 
 import { useSaleContext } from 'Contexts/sale';
 
+import { Loading } from 'Components/Loader';
+
 import SaleItem from 'Components/SaleItem';
 
 const Sales: Component = () => {
-	const { data } = useSaleContext();
+	const { data, loading } = useSaleContext();
+
+	if (loading) return <Loading />;
 
 	if (data === null) return null;
 
