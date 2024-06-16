@@ -1,29 +1,31 @@
 import React from 'react';
 
+import { BrowserRouter } from 'react-router-dom';
+
 import { SaleContextProvider } from 'Contexts/sale';
 
-import Header from 'Components/Header';
-import Sidebar from 'Components/Sidebar';
+import Routes from 'Routes';
 
-import Resume from 'Pages/Resume';
-import Sales from 'Pages/Sales';
+import Header from 'Components/Header';
+import Sidenav from 'Components/Sidenav';
 
 import './globals.css';
 
 const App: Component = () => {
 	return (
-		<SaleContextProvider>
-			<div className='container'>
-				<Sidebar />
+		<BrowserRouter>
+			<SaleContextProvider>
+				<div className='container'>
+					<Sidenav />
 
-				<main>
-					<Header />
+					<main>
+						<Header />
 
-					<Resume />
-					<Sales />
-				</main>
-			</div>
-		</SaleContextProvider>
+						<Routes />
+					</main>
+				</div>
+			</SaleContextProvider>
+		</BrowserRouter>
 	);
 };
 
