@@ -5,7 +5,7 @@ import Months from 'Components/Months';
 
 const Header: Component = () => {
 	return (
-		<header className='mb container'>
+		<header className='mb'>
 			<div className='mb'>
 				<DateRange />
 			</div>

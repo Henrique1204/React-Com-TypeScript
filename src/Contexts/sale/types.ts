@@ -12,11 +12,11 @@ export enum PaymentMethod {
 
 export type Sale = {
 	id: string;
-	name: string;
-	price: number;
+	nome: string;
+	preco: number;
 	status: StatusSaleEnum;
-	payment: PaymentMethod;
-	installments: number | null;
+	pagamento: PaymentMethod;
+	parcelas: number | null;
 	data: string;
 };
 

@@ -85,3 +85,16 @@ ul {
 	border-radius: var(--gap);
 	background: var(--color-5);
 }
+
+.resume {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.resume h2 {
+	margin-bottom: var(--gap);
+
+	font-size: inherit;
+
+	color: var(--color-1);
+}
