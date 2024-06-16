@@ -11,7 +11,7 @@ const Sales: Component = () => {
 
 	if (loading) return <Loading />;
 
-	if (data === null) return null;
+	if (data === null) return <></>;
 
 	return (
 		<ul>

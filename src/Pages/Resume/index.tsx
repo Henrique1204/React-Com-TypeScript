@@ -5,6 +5,7 @@ import { useSaleContext } from 'Contexts/sale';
 import { Loading } from 'Components/Loader';
 
 import SaleResume from './Components/SaleResume';
+import SaleChart from './Components/SaleChart';
 
 const Resume: Component = () => {
 	const { data, loading } = useSaleContext();
@@ -17,7 +18,7 @@ const Resume: Component = () => {
 		<section>
 			<SaleResume />
 
-			<div className='box mb'>gráficos</div>
+			<SaleChart />
 		</section>
 	);
 };

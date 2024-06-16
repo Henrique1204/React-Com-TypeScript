@@ -4,7 +4,9 @@ import { SaleResume } from './types';
 
 type SaleSumPolicyFn = (sale: Sale, saleResume: SaleResume) => void;
 
-const failSaleSumPolicy: SaleSumPolicyFn = () => {};
+const failSaleSumPolicy: SaleSumPolicyFn = (sale, saleResume) => {
+	saleResume.totalFail += sale.preco;
+};
 
 const paidSaleSumPolicy: SaleSumPolicyFn = (sale, saleResume) => {
 	saleResume.totalOfSales += sale.preco;

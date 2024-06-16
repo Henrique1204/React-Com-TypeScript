@@ -19,6 +19,7 @@ export const getSaleResume = (sales: Sale[] | null): SaleResume => {
 			totalOfSales: 0,
 			totalReceived: 0,
 			totalToReceive: 0,
+			totalFail: 0,
 		}
 	);
 
